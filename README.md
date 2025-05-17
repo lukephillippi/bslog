@@ -5,6 +5,20 @@
 [![Test](https://github.com/lukephillippi/bslog/actions/workflows/test.yaml/badge.svg)](https://github.com/lukephillippi/bslog/actions/workflows/test.yaml)
 [![Go Reference](https://pkg.go.dev/badge/go.luke.ph/bslog.svg)](https://pkg.go.dev/go.luke.ph/bslog)
 
+## Installing
+
+1. First, use `go get` to install the latest version of the package:
+
+   ```shell
+   go get -u go.luke.ph/bslog@latest
+   ```
+
+1. Next, include the package in your application:
+
+   ```go
+   import "go.luke.ph/bslog"
+   ```
+
 ## License
 
 The package is released under [the Unlicense license](./LICENSE.md).
