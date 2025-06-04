@@ -56,7 +56,7 @@ func (h *Handler) Handle(ctx context.Context, r slog.Record) error {
 // It calls the wrapped handler's WithAttrs method directly.
 func (h *Handler) WithAttrs(attrs []slog.Attr) slog.Handler {
 	return &Handler{
-		handler:    h.handler.WithAttrs(attrs),
+		handler:    h.WithAttrs(attrs),
 		collection: h.collection,
 	}
 }
@@ -65,7 +65,7 @@ func (h *Handler) WithAttrs(attrs []slog.Attr) slog.Handler {
 // It calls the wrapped handler's WithGroup method directly.
 func (h *Handler) WithGroup(name string) slog.Handler {
 	return &Handler{
-		handler:    h.handler.WithGroup(name),
+		handler:    h.WithGroup(name),
 		collection: h.collection,
 	}
 }
